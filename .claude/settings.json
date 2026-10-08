@@ -1,0 +1,57 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(aspire:*)",
+      "mcp__plugin_playwright_playwright__*",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet test:*)",
+      "Bash(dotnet restore:*)",
+      "Bash(dotnet tool restore)",
+      "Bash(dotnet ef migrations add:*)",
+      "Bash(dotnet ef migrations list:*)",
+      "Bash(dotnet ef migrations script:*)",
+      "Bash(dotnet ef migrations has-pending-model-changes:*)",
+      "Bash(bun install)",
+      "Bash(bun install --frozen-lockfile)",
+      "Bash(bun run:*)",
+      "Bash(bun scripts/check.mjs:*)",
+      "Bash(node scripts/seed-test-users.mjs)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Edit(/src/**)",
+      "Edit(/tests/**)",
+      "Edit(/web/src/**)",
+      "Edit(/web/e2e/**)",
+      "Edit(/docs/goals/**)",
+      "Edit(/docs/fixes/**)",
+      "WebFetch(domain:react.dev)",
+      "WebFetch(domain:vite.dev)",
+      "WebFetch(domain:learn.microsoft.com)",
+      "WebFetch(domain:www.uutilsynet.no)",
+      "Bash(bun scripts/pre-commit.mjs)"
+    ],
+    "ask": [
+      "Bash(bun add:*)",
+      "Bash(dotnet add package:*)",
+      "Bash(dotnet package add:*)",
+      "Edit(/**/*.csproj)",
+      "Edit(/Directory.Packages.props)",
+      "Edit(/web/package.json)",
+      "Edit(/docs/adr/**)"
+    ],
+    "deny": [
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(pnpm:*)",
+      "Bash(yarn:*)",
+      "Bash(git * --no-verify*)",
+      "Bash(git commit -n*)",
+      "Bash(git config core.hooksPath*)"
+    ]
+  }
+}
